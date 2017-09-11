@@ -1,5 +1,5 @@
 import config from 'src/config'
-import getUser from 'src/server/actions/getUser'
+import {default as getUser} from 'src/server/actions/getUser'
 import {removeUserFromOrganizations} from 'src/server/services/gitHubService'
 import {removeCollaboratorFromApps} from 'src/server/services/herokuService'
 import {deactivateUser as deactivateChatUser} from 'src/server/services/chatService'

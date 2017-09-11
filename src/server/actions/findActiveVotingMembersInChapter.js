@@ -1,6 +1,6 @@
 import {r, Member, Phase} from 'src/server/services/dataService'
 import {mapById} from 'src/server/util'
-import getMemberInfo from 'src/server/actions/getMemberInfo'
+import {default as getMemberInfo} from 'src/server/actions/getMemberInfo'
 
 export default async function findActiveVotingMembersInChapter(chapterId) {
   const votingPhaseIds = (await Phase.filter({hasVoting: true}).pluck('id')).map(p => p.id)

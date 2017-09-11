@@ -1,7 +1,7 @@
 import config from 'src/config'
 
 import {userCan} from 'src/common/util'
-import findActiveProjectsForMember from 'src/server/actions/findActiveProjectsForMember'
+import {default as findActiveProjectsForMember} from 'src/server/actions/findActiveProjectsForMember'
 import {Project, findProjectByNameForMember} from 'src/server/services/dataService'
 import {LGCLIUsageError, LGNotAuthorizedError} from 'src/server/util/error'
 
@@ -58,7 +58,7 @@ const subcommands = {
   },
 }
 
-export async function invoke(args, options) {
+export default async function invoke(args, options) {
   if (args._.length >= 1) {
     const subcommand = args._[0]
     return await subcommands[subcommand](args.$[subcommand], options)

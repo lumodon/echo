@@ -1,1 +1,3 @@
-export {default as getGoalInfo} from './getGoalInfo'
+import {default as getGoalInfo} from './getGoalInfo'
+
+export default getGoalInfo

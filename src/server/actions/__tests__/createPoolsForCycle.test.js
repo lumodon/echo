@@ -8,7 +8,7 @@ import factory from 'src/test/factories'
 import {MAX_POOL_SIZE} from 'src/common/models/pool'
 import {Pool, findMembersInPool} from 'src/server/services/dataService'
 
-import createPoolsForCycle from '../createPoolsForCycle'
+import {default as createPoolsForCycle} from '../createPoolsForCycle'
 
 describe(testContext(__filename), function () {
   beforeEach(resetDB)

@@ -1,7 +1,7 @@
 import {renderQuestionBodies} from 'src/common/models/survey'
-import getMemberInfo from 'src/server/actions/getMemberInfo'
+import {default as getMemberInfo} from 'src/server/actions/getMemberInfo'
 import {Project, getFullRetrospectiveSurveyForMember} from 'src/server/services/dataService'
-import {customQueryError} from 'src/server/services/dataService/util'
+import {default as customQueryError} from 'src/server/services/dataService/util'
 import {LGForbiddenError} from 'src/server/util/error'
 
 export async function compileSurveyDataForMember(memberId, projectId) {
