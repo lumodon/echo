@@ -10,7 +10,7 @@ import submitSurvey from 'src/server/graphql/mutations/submitSurvey'
 import unlockRetroSurveyForUser from 'src/server/graphql/mutations/unlockRetroSurveyForUser'
 import updateUser from 'src/server/graphql/mutations/updateUser'
 
-export {
+export default {
   deactivateUser,
   deleteProject,
   importProject,
