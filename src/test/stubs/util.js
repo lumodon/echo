@@ -1,6 +1,6 @@
 import {stub} from 'sinon'
 
-export default function stubServiceAPIs(service, apis) {
+export function stubServiceAPIs(service, apis) {
   const enableOne = name => {
     stub(service, name, apis[name])
   }
