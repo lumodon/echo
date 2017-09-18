@@ -1,4 +1,4 @@
-import {default as findUsers} from 'src/server/actions/findUsers'
+import findUsers from 'src/server/actions/findUsers'
 import {Member} from 'src/server/services/dataService'
 import {mapById} from 'src/common/util'
 

@@ -1,4 +1,4 @@
-import {default as mergeUsers} from 'src/server/actions/mergeUsers'
+import mergeUsers from 'src/server/actions/mergeUsers'
 
 export default async function getUser(identifier, options) {
   const {getUser: getIDMUser} = require('src/server/services/idmService')

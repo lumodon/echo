@@ -1,4 +1,3 @@
-
 import deactivateUser from 'src/server/graphql/mutations/deactivateUser'
 import deleteProject from 'src/server/graphql/mutations/deleteProject'
 import importProject from 'src/server/graphql/mutations/importProject'

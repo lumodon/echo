@@ -1,6 +1,4 @@
-import Types from './types'
-
-const {
+import {
   APP_SHOW_LOADING,
   APP_HIDE_LOADING,
   FETCH_DATA_REQUEST,
@@ -8,7 +6,7 @@ const {
   FETCH_DATA_SUCCESS,
   AUTHORIZATION_ERROR,
   DISMISS_ERROR,
-} = Types
+} from './types'
 
 export function fetchDataRequest() {
   return {type: FETCH_DATA_REQUEST}

@@ -1,6 +1,11 @@
 import config from 'src/config'
 import {GOAL_SELECTION} from 'src/common/models/cycle'
-import {Member, Vote, getCyclesInStateForChapter, getPoolByCycleIdAndMemberId} from 'src/server/services/dataService'
+import {
+  Member,
+  Vote,
+  getCyclesInStateForChapter,
+  getPoolByCycleIdAndMemberId,
+} from 'src/server/services/dataService'
 import {
   LGNotAuthorizedError,
   LGBadRequestError,
@@ -50,7 +55,7 @@ async function _voteForGoals(user, goalDescriptors, responseURL) {
   return {...savedVote, member, cycle}
 }
 
-export default async function invoke(args, {user, responseURL}) {
+export async function invoke(args, {user, responseURL}) {
   const attachments = []
   if (args._.length > 0) {
     await _voteForGoals(user, args._, responseURL)

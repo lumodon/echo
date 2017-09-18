@@ -1,12 +1,5 @@
 import {r, errors, Chapter} from 'src/server/services/dataService'
 
-console.log(`
-  Are we destructuring each of these?
-  r: ${r}
-  errors: ${errors}
-  Chapter: ${Chapter}
-`)
-
 export default function getChapter(identifier) {
   const identifierLower = String(identifier).toLowerCase()
   return Chapter.filter(row => r.or(

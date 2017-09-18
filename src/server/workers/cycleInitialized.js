@@ -1,6 +1,6 @@
 import {Pool} from 'src/server/services/dataService'
-import {default as createPoolsForCycle} from 'src/server/actions/createPoolsForCycle'
-import {default as sendCycleInitializedAnnouncements} from 'src/server/actions/sendCycleInitializedAnnouncements'
+import createPoolsForCycle from 'src/server/actions/createPoolsForCycle'
+import sendCycleInitializedAnnouncements from 'src/server/actions/sendCycleInitializedAnnouncements'
 
 export function start() {
   const jobService = require('src/server/services/jobService')

@@ -5,7 +5,7 @@ import {getTeam, createTeam} from 'src/server/services/gitHubService' // eslint-
 // Ignoring line because we're not allowed to change way these
 // are exported due to note found in 'src/server/services/gitHubService'
 
-export default function start() {
+export function start() {
   const jobService = require('src/server/services/jobService')
   jobService.processJobs('chapterCreated', processChapterCreated)
 }

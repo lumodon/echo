@@ -2,7 +2,7 @@ import Promise from 'bluebird'
 
 import {range, unique, groupById, shuffle} from 'src/common/util'
 import {Pool, PoolMember} from 'src/server/services/dataService'
-import {default as findActiveVotingMembersInChapter} from 'src/server/actions/findActiveVotingMembersInChapter'
+import findActiveVotingMembersInChapter from 'src/server/actions/findActiveVotingMembersInChapter'
 import {POOL_NAMES, MAX_POOL_SIZE} from 'src/common/models/pool'
 
 export default async function createPoolsForCycle(cycle) {

@@ -4,8 +4,8 @@ import {toArray, mapById, sum} from 'src/server/util'
 import {flatten} from 'src/common/util'
 import {getTeamFormationPlan, NoValidPlanFoundError} from 'src/server/services/projectFormationService'
 import {r, Cycle, Phase, Member, Pool, Project, Vote} from 'src/server/services/dataService'
-import {default as getLatestFeedback} from 'src/server/actions/getLatestFeedback'
-import {default as generateProjectName} from 'src/server/actions/generateProjectName'
+import getLatestFeedback from 'src/server/actions/getLatestFeedback'
+import generateProjectName from 'src/server/actions/generateProjectName'
 import {LGBadRequestError} from 'src/server/util/error'
 
 export async function formProjectsIfNoneExist(cycleId, handleNonFatalError) {

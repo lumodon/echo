@@ -1,4 +1,8 @@
-import {Cycle, getLatestCycleForChapter, findVotingResultsForCycle} from 'src/server/services/dataService'
+import {
+  Cycle,
+  getLatestCycleForChapter,
+  findVotingResultsForCycle,
+} from 'src/server/services/dataService'
 
 export default async function getCycleVotingResults(chapterId, cycleId) {
   const cycle = cycleId ?

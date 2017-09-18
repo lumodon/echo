@@ -1,6 +1,6 @@
 import {Member} from 'src/server/services/dataService'
 import {mapById} from 'src/server/util'
-import {default as getMemberInfo} from './getMemberInfo'
+import getMemberInfo from './getMemberInfo'
 
 export default async function findActiveMembersInChapter(chapterId) {
   const members = await Member.filter({chapterId})

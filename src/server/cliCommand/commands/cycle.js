@@ -1,6 +1,6 @@
 import {CYCLE_STATES, PRACTICE, REFLECTION, COMPLETE} from 'src/common/models/cycle'
 import {userCan} from 'src/common/util'
-import {default as getUser} from 'src/server/actions/getUser'
+import getUser from 'src/server/actions/getUser'
 
 import assertUserIsMember from 'src/server/actions/assertUserIsMember'
 import createNextCycleForChapter from 'src/server/actions/createNextCycleForChapter'
@@ -46,7 +46,7 @@ const subcommands = {
   },
 }
 
-export default async function invoke(args, options) {
+export async function invoke(args, options) {
   if (args._.length >= 1) {
     const subcommand = args._[0]
     return await subcommands[subcommand](args.$[subcommand], options)
