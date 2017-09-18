@@ -18,7 +18,7 @@ import getRetrospectiveSurveyQuestion from 'src/server/graphql/queries/getRetros
 import getUser from 'src/server/graphql/queries/getUser'
 import getUserSummary from 'src/server/graphql/queries/getUserSummary'
 
-export {
+export default {
   findChapters,
   findMembers,
   findPhaseSummaries,
