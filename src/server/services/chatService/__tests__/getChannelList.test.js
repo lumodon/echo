@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 /* global expect, testContext */
-/* eslint-disable prefer-arrow-callback, no-unused-expressions, max-nested-callbacks */
+/* eslint-disable prefer-arrow-callback, no-unused-expressions */
 
 import nock from 'nock'
 

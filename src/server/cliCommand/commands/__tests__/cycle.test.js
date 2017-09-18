@@ -4,13 +4,11 @@
 import factory from 'src/test/factories'
 import {resetDB, useFixture} from 'src/test/helpers'
 import {GOAL_SELECTION, PRACTICE, REFLECTION} from 'src/common/models/cycle'
-import Models from 'src/server/services/dataService/models'
+import {Cycle} from 'src/server/services/dataService/models'
 
 import {getCommand} from 'src/server/cliCommand/util'
 
 import {concatResults} from './helpers'
-
-const {Cycle} = Models
 
 describe(testContext(__filename), function () {
   useFixture.ensureNoGlobalWindow()

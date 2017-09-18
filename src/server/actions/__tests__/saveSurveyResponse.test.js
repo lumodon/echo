@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 /* global expect, testContext */
-/* eslint-disable prefer-arrow-callback, no-unused-expressions, max-nested-callbacks */
+/* eslint-disable prefer-arrow-callback, no-unused-expressions */
 import {resetDB, useFixture} from 'src/test/helpers'
 import {Response} from 'src/server/services/dataService'
 
