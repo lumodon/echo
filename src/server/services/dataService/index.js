@@ -54,7 +54,6 @@ import {
   getRetrospectiveSurveyForMember,
   getSurveyBlueprintByDescriptor,
   getSurveyById,
-  index,
   inflateQuestionRefs,
   truncateTables,
 } from './queries'
@@ -111,7 +110,6 @@ export {
   getRetrospectiveSurveyForMember,
   getSurveyBlueprintByDescriptor,
   getSurveyById,
-  index,
   inflateQuestionRefs,
   truncateTables,
 }
