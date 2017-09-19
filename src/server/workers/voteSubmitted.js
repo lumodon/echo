@@ -1,7 +1,7 @@
 import Promise from 'bluebird'
 
 import {Cycle, Pool, Vote, r} from 'src/server/services/dataService'
-import {getGoalInfo} from 'src/server/services/goalLibraryService'
+import getGoalInfo from 'src/server/services/goalLibraryService'
 import getCycleVotingResults from 'src/server/actions/getCycleVotingResults'
 
 export default function start() {
