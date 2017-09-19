@@ -8,7 +8,7 @@ import Models from 'src/server/services/dataService/models'
 
 import {getCommand} from 'src/server/cliCommand/util'
 
-import {concatResults} from './helpers'
+import concatResults from './helpers'
 
 const {Cycle} = Models
 

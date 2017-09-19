@@ -7,7 +7,7 @@ import {resetDB, useFixture} from 'src/test/helpers'
 import {getCommand} from 'src/server/cliCommand/util'
 import {Vote, Member} from 'src/server/services/dataService'
 
-import {concatResults} from './helpers'
+import concatResults from './helpers'
 
 describe(testContext(__filename), function () {
   useFixture.ensureNoGlobalWindow()
