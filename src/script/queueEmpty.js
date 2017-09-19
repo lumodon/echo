@@ -1,7 +1,7 @@
 import parseArgs from 'minimist'
 
 import queueService from 'src/server/services/queueService'
-import {finish} from './util'
+import finish from './util'
 
 const {emptyQueue} = queueService
 

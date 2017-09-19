@@ -1,4 +1,4 @@
-import crmService from 'src/server/services/crmService'
+import {crmService} from 'src/server/services/crmService'
 import stubServiceAPIs from './util'
 
 const stubbedAPIs = stubServiceAPIs(crmService, {
