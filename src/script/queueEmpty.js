@@ -1,7 +1,9 @@
 import parseArgs from 'minimist'
 
-import {emptyQueue} from 'src/server/services/queueService'
+import queueService from 'src/server/services/queueService'
 import {finish} from './util'
+
+const {emptyQueue} = queueService
 
 run()
   .then(() => finish())
